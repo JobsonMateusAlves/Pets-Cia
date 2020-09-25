@@ -1,0 +1,6 @@
+framework module Pods_Pets_Cia {
+  umbrella header "Pods-Pets&Cia-umbrella.h"
+
+  export *
+  module * { export * }
+}
