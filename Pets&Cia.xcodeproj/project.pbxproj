@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CB53883BD058ED1D3CD16B5 /* Pods_Pets_Cia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */; };
 		F6365D7F251E9A50002720DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6365D7E251E9A50002720DB /* AppDelegate.swift */; };
 		F6365D81251E9A50002720DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6365D80251E9A50002720DB /* SceneDelegate.swift */; };
 		F6365D83251E9A50002720DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6365D82251E9A50002720DB /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_Cia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BFAD9BCFCCB78E4ADC7C6F3 /* Pods-Pets&Cia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.debug.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.debug.xcconfig"; sourceTree = "<group>"; };
+		C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.release.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.release.xcconfig"; sourceTree = "<group>"; };
 		F6365D7B251E9A50002720DB /* Pets&Cia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pets&Cia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6365D7E251E9A50002720DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6365D80251E9A50002720DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB53883BD058ED1D3CD16B5 /* Pods_Pets_Cia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E2F1F7DDF067B7582CFA0B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		740B9A8FA210835D64138655 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BFAD9BCFCCB78E4ADC7C6F3 /* Pods-Pets&Cia.debug.xcconfig */,
+				C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F6365D72251E9A4F002720DB = {
 			isa = PBXGroup;
 			children = (
 				F6365D7D251E9A50002720DB /* Pets&Cia */,
 				F6365D7C251E9A50002720DB /* Products */,
+				740B9A8FA210835D64138655 /* Pods */,
+				5E2F1F7DDF067B7582CFA0B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6365D8F251E9A54002720DB /* Build configuration list for PBXNativeTarget "Pets&Cia" */;
 			buildPhases = (
+				6F88C8F1B1E9D5CA09983CA7 /* [CP] Check Pods Manifest.lock */,
 				F6365D77251E9A50002720DB /* Sources */,
 				F6365D78251E9A50002720DB /* Frameworks */,
 				F6365D79251E9A50002720DB /* Resources */,
+				0CBAB9B9ABC8998EF450A152 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CBAB9B9ABC8998EF450A152 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F88C8F1B1E9D5CA09983CA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pets&Cia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6365D77251E9A50002720DB /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		F6365D90251E9A54002720DB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BFAD9BCFCCB78E4ADC7C6F3 /* Pods-Pets&Cia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +369,7 @@
 		};
 		F6365D91251E9A54002720DB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
