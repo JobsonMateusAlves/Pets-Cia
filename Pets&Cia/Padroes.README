@@ -1,0 +1,84 @@
+# Padrões
+## Usados
+### Padrões GRASP:
+Invenção Pura
+Indirecao
+
+
+### Padrões GOF
+Template Method
+
+### Outros:
+
+
+
+- Vamos usar:
+Singleton
+Observer
+DAO
+Repository Ou Façade
+Builder
+
+
+Factory?
+
+
+Padrões GRASP:
+
+
+## Padrões GRASP ------------------------
+
+### Basicos:
+
+Information Expert - Ok
+Creator - Ok
+High Cohesion - Ok
+Low Coupling - Ok
+Controller - Ok
+
+### Avançados:
+
+Polimorphism - Ok
+Pure Fabrication - Ok
+Indirection - OK
+
+
+
+
+## Padrões GOF------------------------
+
+### Criação:
+Factory Method - Ok
+Abstract Factory - Ok
+Builder - Ok
+Singleton - Ok
+Prototype
+
+### Estrutura:
+Adapter - Ok
+Facade - Ok
+Composite - Ok - X
+
+### Comportamento:
+Chain of Responsibility
+Template Method
+Observer - Ok
+
+
+
+
+------------------------
+
+
+Duvidas?
+
+Sobre não ter muitos.
+cadeia de responsabilidades para tratamentos. Acho que nao
+Observer pode ser de 1 pra 1?
+
+
+
+
+
+
+

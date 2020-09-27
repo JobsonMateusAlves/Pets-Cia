@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		F6365D86251E9A50002720DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6365D84251E9A50002720DB /* Main.storyboard */; };
 		F6365D88251E9A54002720DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6365D87251E9A54002720DB /* Assets.xcassets */; };
 		F6365D8B251E9A54002720DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6365D89251E9A54002720DB /* LaunchScreen.storyboard */; };
+		F6DB1D2F25201ABF0022C27B /* DonoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D2E25201ABF0022C27B /* DonoDAO.swift */; };
+		F6FB015A251F9DF700153564 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0159251F9DF700153564 /* DAO.swift */; };
+		F6FB015C251FAF8300153564 /* Padroes.README in Resources */ = {isa = PBXBuildFile; fileRef = F6FB015B251FAF8300153564 /* Padroes.README */; };
+		F6FB0161251FCBFC00153564 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0160251FCBFC00153564 /* UIView.swift */; };
+		F6FB0167251FCFA800153564 /* Dono.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0166251FCFA800153564 /* Dono.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		F6365D87251E9A54002720DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6365D8A251E9A54002720DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6365D8C251E9A54002720DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DB1D2E25201ABF0022C27B /* DonoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoDAO.swift; sourceTree = "<group>"; };
+		F6FB0159251F9DF700153564 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		F6FB015B251FAF8300153564 /* Padroes.README */ = {isa = PBXFileReference; lastKnownFileType = text; path = Padroes.README; sourceTree = "<group>"; };
+		F6FB0160251FCBFC00153564 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F6FB0166251FCFA800153564 /* Dono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dono.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +66,6 @@
 				2BFAD9BCFCCB78E4ADC7C6F3 /* Pods-Pets&Cia.debug.xcconfig */,
 				C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +90,8 @@
 		F6365D7D251E9A50002720DB /* Pets&Cia */ = {
 			isa = PBXGroup;
 			children = (
+				F6FB0162251FCF4700153564 /* DataLayer */,
+				F6FB015D251FCBB200153564 /* Application */,
 				F6365D7E251E9A50002720DB /* AppDelegate.swift */,
 				F6365D80251E9A50002720DB /* SceneDelegate.swift */,
 				F6365D82251E9A50002720DB /* ViewController.swift */,
@@ -88,8 +99,75 @@
 				F6365D87251E9A54002720DB /* Assets.xcassets */,
 				F6365D89251E9A54002720DB /* LaunchScreen.storyboard */,
 				F6365D8C251E9A54002720DB /* Info.plist */,
+				F6FB015B251FAF8300153564 /* Padroes.README */,
 			);
 			path = "Pets&Cia";
+			sourceTree = "<group>";
+		};
+		F6DB1D2D25201AA00022C27B /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				F6DB1D2E25201ABF0022C27B /* DonoDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		F6FB015D251FCBB200153564 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB015E251FCBE600153564 /* Core */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F6FB015E251FCBE600153564 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB015F251FCBEF00153564 /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F6FB015F251FCBEF00153564 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB0160251FCBFC00153564 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F6FB0162251FCF4700153564 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB0163251FCF7A00153564 /* Core */,
+				F6FB0164251FCF8600153564 /* Donos */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		F6FB0163251FCF7A00153564 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB0159251F9DF700153564 /* DAO.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F6FB0164251FCF8600153564 /* Donos */ = {
+			isa = PBXGroup;
+			children = (
+				F6DB1D2D25201AA00022C27B /* DAO */,
+				F6FB0165251FCF9D00153564 /* Model */,
+			);
+			path = Donos;
+			sourceTree = "<group>";
+		};
+		F6FB0165251FCF9D00153564 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB0166251FCFA800153564 /* Dono.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FB015C251FAF8300153564 /* Padroes.README in Resources */,
 				F6365D8B251E9A54002720DB /* LaunchScreen.storyboard in Resources */,
 				F6365D88251E9A54002720DB /* Assets.xcassets in Resources */,
 				F6365D86251E9A50002720DB /* Main.storyboard in Resources */,
@@ -207,9 +286,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FB0161251FCBFC00153564 /* UIView.swift in Sources */,
+				F6FB0167251FCFA800153564 /* Dono.swift in Sources */,
+				F6FB015A251F9DF700153564 /* DAO.swift in Sources */,
 				F6365D83251E9A50002720DB /* ViewController.swift in Sources */,
 				F6365D7F251E9A50002720DB /* AppDelegate.swift in Sources */,
 				F6365D81251E9A50002720DB /* SceneDelegate.swift in Sources */,
+				F6DB1D2F25201ABF0022C27B /* DonoDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
