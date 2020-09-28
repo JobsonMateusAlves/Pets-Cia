@@ -16,7 +16,7 @@ class DonoFormsViewController: UIViewController {
     @IBOutlet weak var telefoneTextField: UITextField!
     @IBOutlet weak var enderecoTextField: UITextField!
     
-    var useCase: DonoUseCases?
+    weak var useCases: DonoUseCases?
     var id: Int?
     
     override func viewDidLoad() {
@@ -24,13 +24,13 @@ class DonoFormsViewController: UIViewController {
         
         self.title = "Dono"
         
-        self.useCase = DonoUseCases.shared
+        self.useCases = DonoUseCases.shared
         self.setup()
     }
     
     func setup() {
         
-        let dono: Dono? = self.useCase?.get(by: self.id)
+        let dono: Dono? = self.useCases?.get(by: self.id)
         
         self.nomeTextField.text = dono?.nome
         self.cpfTextField.text = dono?.cpf
@@ -38,6 +38,10 @@ class DonoFormsViewController: UIViewController {
         self.telefoneTextField.text = dono?.numeroTelefone
         self.enderecoTextField.text = dono?.endereco
     }
+}
+
+//MARK: Actions
+extension DonoFormsViewController {
     
     @IBAction func confirmarActioln(_ sender: Any) {
         
@@ -50,13 +54,14 @@ class DonoFormsViewController: UIViewController {
         )
         
         if let id = self.id {
-            self.useCase?.atualizar(dono: dono, with: id)
+            self.useCases?.atualizar(dono: dono, with: id)
         } else {
-            self.useCase?.cadastrar(dono: dono)
+            self.useCases?.cadastrar(dono: dono)
         }
         
         self.dismiss(animated: true)
     }
+    
     @IBAction func cancelar(_ sender: Any) {
         
         self.dismiss(animated: true)

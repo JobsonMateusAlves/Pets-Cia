@@ -10,14 +10,15 @@ import UIKit
 
 class ListarDonosViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     var donos: [Dono] = [] {
         didSet {
             self.tableView.reloadData()
         }
     }
-    var useCases: DonoUseCases?
     
-    @IBOutlet weak var tableView: UITableView!
+    var useCases: DonoUseCases?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,14 +31,30 @@ class ListarDonosViewController: UIViewController {
         self.donos = self.useCases?.listar() ?? []
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if self.isMovingFromParent {
+            self.useCases?.remove(observer: self)
+        }
+    }
+}
+
+extension ListarDonosViewController: Observer {
+    func update() {
+        self.donos = self.useCases?.listar() ?? []
+    }
+}
+
+//MARK: TableView
+extension ListarDonosViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func setupTableView() {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.register(cellType: DonoTableViewCell.self)
     }
-}
-
-extension ListarDonosViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.donos.count
     }
@@ -61,12 +78,7 @@ extension ListarDonosViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.showAlert(dono: self.donos[indexPath.row])
-    }
-}
-
-extension ListarDonosViewController: Observer {
-    func update() {
-        self.donos = self.useCases?.listar() ?? []
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
@@ -83,6 +95,8 @@ extension ListarDonosViewController {
         alert.addAction(UIAlertAction(title: "Editar", style: .default, handler: { (_) in
             self.openEditar(dono: dono)
         }))
+        
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel))
         
         self.present(alert, animated: true)
     }

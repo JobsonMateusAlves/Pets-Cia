@@ -15,7 +15,7 @@ enum TypeConstraint {
     case equalTo
 }
 
-//Padrões -> Builder
+//Padrão Adapter (Nào está sendo utilizado)
 extension UIView {
     
     @discardableResult

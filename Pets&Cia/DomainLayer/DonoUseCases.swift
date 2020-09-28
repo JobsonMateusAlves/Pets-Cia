@@ -9,8 +9,10 @@
 import Foundation
 import RealmSwift
 
-class DonoUseCases: UseCases, Subject {
-    
+//Padrão Singleton
+//Padrão Observer
+class DonoUseCases: UseCases {
+
     typealias T = Dono
     
     static let shared: DonoUseCases = {
@@ -18,16 +20,12 @@ class DonoUseCases: UseCases, Subject {
     }()
     
     var dao: DonoDAO?
-    var observer: Observer?
+    var observers: [Observer] = []
     
     private init() {}
     
     func set(dao: DonoDAO) {
         self.dao = dao
-    }
-    
-    func add(observer: Observer?) {
-        self.observer = observer
     }
 }
 
@@ -35,13 +33,13 @@ class DonoUseCases: UseCases, Subject {
 extension DonoUseCases {
     func cadastrar(dono: Dono) {
         self.dao?.save(object: dono)
-        self.observer?.update()
+        self.notify()
     }
     
     func atualizar(dono: Dono, with id: Any) {
         
         self.dao?.update(object: dono, id: id)
-        self.observer?.update()
+        self.notify()
     }
     
     func listar() -> [Dono] {
@@ -51,7 +49,7 @@ extension DonoUseCases {
     func remover(id: Any?) {
         if let id = id {
             self.dao?.delete(with: id)
-            self.observer?.update()
+            self.notify()
         }
     }
     
@@ -63,7 +61,14 @@ extension DonoUseCases {
     }
 }
 
-protocol Subject {
-    var observer: Observer? { get }
-    func add(observer: Observer?)
+extension DonoUseCases: Subject {
+    
+    func remove(observer: Observer?) {
+        if let observer = observer {
+            self.observers.removeAll(where: { $0 as? UIViewController === observer as? UIViewController })
+        }
+    }
 }
+
+
+

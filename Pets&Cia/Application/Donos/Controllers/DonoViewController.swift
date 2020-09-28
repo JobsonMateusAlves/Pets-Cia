@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Padrão Controller
 class DonoViewController: UIViewController {
 
     @IBOutlet weak var nomeLabel: UILabel!
@@ -17,20 +18,21 @@ class DonoViewController: UIViewController {
     @IBOutlet weak var enderecoLabel: UILabel!
     
     var id: Int?
-    var useCases: DonoUseCases?
+    var useCases: DonoUseCases? //Padrão Controller
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Dono"
         
+        self.useCases = DonoUseCases.shared
         self.setup()
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cancelar", style: .plain, target: self, action: #selector(DonoViewController.cancelarAction))
     }
     
     func setup() {
-        self.useCases = DonoUseCases.shared
+        
         let dono = self.useCases?.get(by: self.id)
         
         self.nomeLabel.text = dono?.nome ?? ""
@@ -39,6 +41,10 @@ class DonoViewController: UIViewController {
         self.telefoneLabel.text = dono?.numeroTelefone ?? ""
         self.enderecoLabel.text = dono?.endereco ?? ""
     }
+}
+
+//MARK: Actions
+extension DonoViewController {
     
     @IBAction func apagarAction(_ sender: Any) {
         

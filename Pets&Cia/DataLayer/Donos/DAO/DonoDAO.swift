@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 
+//Padrão Polimorfismo?
 class DonoDAO: DAO {
     typealias T = Dono
     

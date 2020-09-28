@@ -2,12 +2,10 @@
 ## Usados
 ### Padrões GRASP:
 Creator
-
-
 Invenção Pura
 Indirecao
 Controller
-
+Polimorfismo?
 
 ### Padrões GOF
 Template Method

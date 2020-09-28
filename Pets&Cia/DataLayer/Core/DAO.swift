@@ -9,7 +9,10 @@
 import Foundation
 import RealmSwift
 
-//Padrões -> DAO, Invencao pura e Indireção
+//Padrão DAO
+//Padrão Invencao pura
+//Padrão Indireção
+//Padrão Template Method
 protocol DAO {
     associatedtype T: Object
     
