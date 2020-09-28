@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CB53883BD058ED1D3CD16B5 /* Pods_Pets_Cia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */; };
+		E8E1F0F22521859800AFFA18 /* ServicoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1F0F12521859800AFFA18 /* ServicoDAO.swift */; };
 		F6189948252107EB00AB8A28 /* DonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6189947252107EB00AB8A28 /* DonoViewController.swift */; };
 		F61F88032521020A00FB1925 /* DependenciesInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61F88022521020A00FB1925 /* DependenciesInjector.swift */; };
 		F634C3AC25204C2000485546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3AA25204C2000485546 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_Cia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFAD9BCFCCB78E4ADC7C6F3 /* Pods-Pets&Cia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.debug.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.debug.xcconfig"; sourceTree = "<group>"; };
 		C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.release.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.release.xcconfig"; sourceTree = "<group>"; };
+		E8E1F0F12521859800AFFA18 /* ServicoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicoDAO.swift; sourceTree = "<group>"; };
 		F6189947252107EB00AB8A28 /* DonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoViewController.swift; sourceTree = "<group>"; };
 		F61F88022521020A00FB1925 /* DependenciesInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesInjector.swift; sourceTree = "<group>"; };
 		F634C3AA25204C2000485546 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 				C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8E1F0F02521856C00AFFA18 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				E8E1F0F12521859800AFFA18 /* ServicoDAO.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 		F634C3A925204C2000485546 /* Controllers */ = {
@@ -201,8 +211,8 @@
 		F6DB1D32252031520022C27B /* Servico */ = {
 			isa = PBXGroup;
 			children = (
+				E8E1F0F02521856C00AFFA18 /* DAO */,
 				F6E52A4C2521687100FDE820 /* Model */,
-				F6E52A4D2521687700FDE820 /* DAO */,
 			);
 			name = Servico;
 			path = "Serviço";
@@ -223,13 +233,6 @@
 				F6DB1D30252030A20022C27B /* Servico.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		F6E52A4D2521687700FDE820 /* DAO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DAO;
 			sourceTree = "<group>";
 		};
 		F6E52A4E2521688400FDE820 /* Model */ = {
@@ -446,6 +449,7 @@
 				F6DB1D2F25201ABF0022C27B /* DonoDAO.swift in Sources */,
 				F634C3B72520DCD800485546 /* Object.swift in Sources */,
 				F6DB1D35252031AC0022C27B /* Animal.swift in Sources */,
+				E8E1F0F22521859800AFFA18 /* ServicoDAO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
