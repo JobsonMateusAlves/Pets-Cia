@@ -19,6 +19,21 @@ class DonoDAO: DAO {
         self.realm = realm
     }
     
+    //MARK: Update
+    func update(object: Dono, id: Any) {
+        
+        let result = self.getReference(by: id)
+        
+        try? self.realm.write {
+            
+            result?.set(nome: object.nome)
+            result?.set(cpf: object.cpf)
+            result?.set(email: object.email)
+            result?.set(numeroTelefone: object.numeroTelefone)
+            result?.set(endereco: object.endereco)
+        }
+    }
+    
     func setAutoIncrement(of object: Dono, with id: Any) {
         object.id.value = id as? Int
     }

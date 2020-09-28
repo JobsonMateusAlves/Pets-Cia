@@ -9,23 +9,24 @@
 import Foundation
 import RealmSwift
 
+
 class Dono: Object {
     
-    var id = RealmOptional<Int>()
-    @objc dynamic var nome: String?
-    @objc dynamic var cpf: String?
-    @objc dynamic var email: String?
-    @objc dynamic var numeroTelefone: String?
-    @objc dynamic var endereço: String?
+    public private(set) var id = RealmOptional<Int>()
+    @objc dynamic public private(set) var nome: String?
+    @objc dynamic public private(set) var cpf: String?
+    @objc dynamic public private(set) var email: String?
+    @objc dynamic public private(set) var numeroTelefone: String?
+    @objc dynamic public private(set) var endereco: String?
     
-    init(nome: String, cpf: String, email: String, numeroTelefone: String, endereço: String) {
+    init(nome: String?, cpf: String?, email: String?, numeroTelefone: String?, endereco: String?) {
         super.init()
         
         self.nome = nome
         self.cpf = cpf
         self.email = email
         self.numeroTelefone = numeroTelefone
-        self.endereço = endereço
+        self.endereco = endereco
     }
     
     required init() {
@@ -34,5 +35,25 @@ class Dono: Object {
     
     override class func primaryKey() -> String? {
         return "id"
+    }
+    
+    func set(nome: String?) {
+        self.nome = nome
+    }
+    
+    func set(cpf: String?) {
+        self.cpf = cpf
+    }
+    
+    func set(email: String?) {
+        self.email = email
+    }
+    
+    func set(numeroTelefone: String?) {
+        self.numeroTelefone = numeroTelefone
+    }
+    
+    func set(endereco: String?) {
+        self.endereco = endereco
     }
 }

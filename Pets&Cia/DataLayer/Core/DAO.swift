@@ -9,12 +9,14 @@
 import Foundation
 import RealmSwift
 
+//Padrões -> DAO, Invencao pura e Indireção
 protocol DAO {
     associatedtype T: Object
     
     var realm: Realm { get }
     
-    func save(object: T, update: Realm.UpdatePolicy)
+    func save(object: T)
+    func update(object: T, id: Any)
     func get() -> [T]
     func getReference(by id: Any?) -> T?
     func delete()
@@ -27,12 +29,12 @@ protocol DAO {
 extension DAO {
     
     //MARK: Save methods
-    func save(object: T, update: Realm.UpdatePolicy = .all) {
+    func save(object: T) {
         
         self.autoIncrementId(of: object)
         
         try? self.realm.write {
-            self.realm.add(object, update: update)
+            self.realm.add(object, update: .error)
         }
     }
     
@@ -50,6 +52,11 @@ extension DAO {
     func getReference(by id: Any?) -> T? {
         
         self.realm.object(ofType: T.self, forPrimaryKey: id)
+    }
+    
+    func get(by id: Any?) -> T? {
+        
+        self.realm.object(ofType: T.self, forPrimaryKey: id)?.detached()
     }
     
     //MARK: Delete methods

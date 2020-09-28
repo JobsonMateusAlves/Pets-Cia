@@ -8,14 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0CB53883BD058ED1D3CD16B5 /* Pods_Pets_Cia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */; };
+		F6189948252107EB00AB8A28 /* DonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6189947252107EB00AB8A28 /* DonoViewController.swift */; };
+		F61F88032521020A00FB1925 /* DependenciesInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61F88022521020A00FB1925 /* DependenciesInjector.swift */; };
+		F634C3AC25204C2000485546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3AA25204C2000485546 /* ViewController.swift */; };
+		F634C3AF2520CC3600485546 /* DonoFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3AE2520CC3600485546 /* DonoFormsViewController.swift */; };
+		F634C3B22520CF7300485546 /* DonoUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3B12520CF7300485546 /* DonoUseCases.swift */; };
+		F634C3B42520DB5E00485546 /* UseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3B32520DB5E00485546 /* UseCases.swift */; };
+		F634C3B72520DCD800485546 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3B62520DCD800485546 /* Object.swift */; };
+		F634C3BA2520E11D00485546 /* ListarDonosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3B92520E11D00485546 /* ListarDonosViewController.swift */; };
+		F634C3BE2520E1B900485546 /* DonoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3BC2520E1B900485546 /* DonoTableViewCell.swift */; };
+		F634C3BF2520E1B900485546 /* DonoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F634C3BD2520E1B900485546 /* DonoTableViewCell.xib */; };
+		F634C3C62520FC3C00485546 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3C52520FC3C00485546 /* Observer.swift */; };
 		F6365D7F251E9A50002720DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6365D7E251E9A50002720DB /* AppDelegate.swift */; };
 		F6365D81251E9A50002720DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6365D80251E9A50002720DB /* SceneDelegate.swift */; };
-		F6365D83251E9A50002720DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6365D82251E9A50002720DB /* ViewController.swift */; };
 		F6365D86251E9A50002720DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6365D84251E9A50002720DB /* Main.storyboard */; };
 		F6365D88251E9A54002720DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6365D87251E9A54002720DB /* Assets.xcassets */; };
 		F6365D8B251E9A54002720DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6365D89251E9A54002720DB /* LaunchScreen.storyboard */; };
 		F6DB1D2F25201ABF0022C27B /* DonoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D2E25201ABF0022C27B /* DonoDAO.swift */; };
 		F6DB1D31252030A20022C27B /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D30252030A20022C27B /* Servico.swift */; };
+		F6DB1D35252031AC0022C27B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D34252031AC0022C27B /* Animal.swift */; };
 		F6FB015A251F9DF700153564 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0159251F9DF700153564 /* DAO.swift */; };
 		F6FB015C251FAF8300153564 /* Padroes.README in Resources */ = {isa = PBXBuildFile; fileRef = F6FB015B251FAF8300153564 /* Padroes.README */; };
 		F6FB0161251FCBFC00153564 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0160251FCBFC00153564 /* UIView.swift */; };
@@ -26,16 +37,27 @@
 		01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_Cia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFAD9BCFCCB78E4ADC7C6F3 /* Pods-Pets&Cia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.debug.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.debug.xcconfig"; sourceTree = "<group>"; };
 		C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.release.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.release.xcconfig"; sourceTree = "<group>"; };
+		F6189947252107EB00AB8A28 /* DonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoViewController.swift; sourceTree = "<group>"; };
+		F61F88022521020A00FB1925 /* DependenciesInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesInjector.swift; sourceTree = "<group>"; };
+		F634C3AA25204C2000485546 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F634C3AE2520CC3600485546 /* DonoFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoFormsViewController.swift; sourceTree = "<group>"; };
+		F634C3B12520CF7300485546 /* DonoUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoUseCases.swift; sourceTree = "<group>"; };
+		F634C3B32520DB5E00485546 /* UseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCases.swift; sourceTree = "<group>"; };
+		F634C3B62520DCD800485546 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		F634C3B92520E11D00485546 /* ListarDonosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarDonosViewController.swift; sourceTree = "<group>"; };
+		F634C3BC2520E1B900485546 /* DonoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoTableViewCell.swift; sourceTree = "<group>"; };
+		F634C3BD2520E1B900485546 /* DonoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonoTableViewCell.xib; sourceTree = "<group>"; };
+		F634C3C52520FC3C00485546 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
 		F6365D7B251E9A50002720DB /* Pets&Cia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pets&Cia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6365D7E251E9A50002720DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6365D80251E9A50002720DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F6365D82251E9A50002720DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6365D85251E9A50002720DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F6365D87251E9A54002720DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6365D8A251E9A54002720DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6365D8C251E9A54002720DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F6DB1D2E25201ABF0022C27B /* DonoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoDAO.swift; sourceTree = "<group>"; };
 		F6DB1D30252030A20022C27B /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servico.swift; sourceTree = "<group>"; };
+		F6DB1D34252031AC0022C27B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		F6FB0159251F9DF700153564 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		F6FB015B251FAF8300153564 /* Padroes.README */ = {isa = PBXFileReference; lastKnownFileType = text; path = Padroes.README; sourceTree = "<group>"; };
 		F6FB0160251FCBFC00153564 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -71,6 +93,50 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F634C3A925204C2000485546 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F634C3AE2520CC3600485546 /* DonoFormsViewController.swift */,
+				F634C3B92520E11D00485546 /* ListarDonosViewController.swift */,
+				F6189947252107EB00AB8A28 /* DonoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F634C3B02520CF5E00485546 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F634C3B82520DD7400485546 /* Protocols */,
+				F634C3B12520CF7300485546 /* DonoUseCases.swift */,
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		F634C3B82520DD7400485546 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F634C3B32520DB5E00485546 /* UseCases.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F634C3BB2520E1A100485546 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F634C3BC2520E1B900485546 /* DonoTableViewCell.swift */,
+				F634C3BD2520E1B900485546 /* DonoTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F634C3C42520FC3000485546 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				F634C3C52520FC3C00485546 /* Observer.swift */,
+			);
+			path = Observer;
+			sourceTree = "<group>";
+		};
 		F6365D72251E9A4F002720DB = {
 			isa = PBXGroup;
 			children = (
@@ -92,19 +158,36 @@
 		F6365D7D251E9A50002720DB /* Pets&Cia */ = {
 			isa = PBXGroup;
 			children = (
-				F6DB1D30252030A20022C27B /* Servico.swift */,
+				F6FB015B251FAF8300153564 /* Padroes.README */,
+				F6459CE02520374000509B2E /* Core */,
 				F6FB0162251FCF4700153564 /* DataLayer */,
+				F634C3B02520CF5E00485546 /* DomainLayer */,
 				F6FB015D251FCBB200153564 /* Application */,
-				F6365D7E251E9A50002720DB /* AppDelegate.swift */,
-				F6365D80251E9A50002720DB /* SceneDelegate.swift */,
-				F6365D82251E9A50002720DB /* ViewController.swift */,
-				F6365D84251E9A50002720DB /* Main.storyboard */,
 				F6365D87251E9A54002720DB /* Assets.xcassets */,
 				F6365D89251E9A54002720DB /* LaunchScreen.storyboard */,
 				F6365D8C251E9A54002720DB /* Info.plist */,
-				F6FB015B251FAF8300153564 /* Padroes.README */,
 			);
 			path = "Pets&Cia";
+			sourceTree = "<group>";
+		};
+		F6459CE02520374000509B2E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F6365D7E251E9A50002720DB /* AppDelegate.swift */,
+				F6365D80251E9A50002720DB /* SceneDelegate.swift */,
+				F61F88022521020A00FB1925 /* DependenciesInjector.swift */,
+				F634C3C42520FC3000485546 /* Observer */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F6530BB925204AF400CA81FA /* Donos */ = {
+			isa = PBXGroup;
+			children = (
+				F634C3BB2520E1A100485546 /* Views */,
+				F634C3A925204C2000485546 /* Controllers */,
+			);
+			path = Donos;
 			sourceTree = "<group>";
 		};
 		F6DB1D2D25201AA00022C27B /* DAO */ = {
@@ -115,10 +198,70 @@
 			path = DAO;
 			sourceTree = "<group>";
 		};
+		F6DB1D32252031520022C27B /* Servico */ = {
+			isa = PBXGroup;
+			children = (
+				F6E52A4C2521687100FDE820 /* Model */,
+				F6E52A4D2521687700FDE820 /* DAO */,
+			);
+			name = Servico;
+			path = "Serviço";
+			sourceTree = "<group>";
+		};
+		F6DB1D332520315C0022C27B /* Animal */ = {
+			isa = PBXGroup;
+			children = (
+				F6E52A4E2521688400FDE820 /* Model */,
+				F6E52A4F2521688B00FDE820 /* DAO */,
+			);
+			path = Animal;
+			sourceTree = "<group>";
+		};
+		F6E52A4C2521687100FDE820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6DB1D30252030A20022C27B /* Servico.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6E52A4D2521687700FDE820 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		F6E52A4E2521688400FDE820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6DB1D34252031AC0022C27B /* Animal.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F6E52A4F2521688B00FDE820 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		F6E52A502521695800FDE820 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F634C3AA25204C2000485546 /* ViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		F6FB015D251FCBB200153564 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				F6365D84251E9A50002720DB /* Main.storyboard */,
 				F6FB015E251FCBE600153564 /* Core */,
+				F6E52A502521695800FDE820 /* Menu */,
+				F6530BB925204AF400CA81FA /* Donos */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -126,17 +269,9 @@
 		F6FB015E251FCBE600153564 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F6FB015F251FCBEF00153564 /* Extensions */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		F6FB015F251FCBEF00153564 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
 				F6FB0160251FCBFC00153564 /* UIView.swift */,
 			);
-			path = Extensions;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		F6FB0162251FCF4700153564 /* DataLayer */ = {
@@ -144,6 +279,8 @@
 			children = (
 				F6FB0163251FCF7A00153564 /* Core */,
 				F6FB0164251FCF8600153564 /* Donos */,
+				F6DB1D32252031520022C27B /* Servico */,
+				F6DB1D332520315C0022C27B /* Animal */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -152,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				F6FB0159251F9DF700153564 /* DAO.swift */,
+				F634C3B62520DCD800485546 /* Object.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -159,8 +297,8 @@
 		F6FB0164251FCF8600153564 /* Donos */ = {
 			isa = PBXGroup;
 			children = (
-				F6DB1D2D25201AA00022C27B /* DAO */,
 				F6FB0165251FCF9D00153564 /* Model */,
+				F6DB1D2D25201AA00022C27B /* DAO */,
 			);
 			path = Donos;
 			sourceTree = "<group>";
@@ -233,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F634C3BF2520E1B900485546 /* DonoTableViewCell.xib in Resources */,
 				F6FB015C251FAF8300153564 /* Padroes.README in Resources */,
 				F6365D8B251E9A54002720DB /* LaunchScreen.storyboard in Resources */,
 				F6365D88251E9A54002720DB /* Assets.xcassets in Resources */,
@@ -290,13 +429,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6FB0161251FCBFC00153564 /* UIView.swift in Sources */,
+				F634C3B22520CF7300485546 /* DonoUseCases.swift in Sources */,
+				F6189948252107EB00AB8A28 /* DonoViewController.swift in Sources */,
 				F6FB0167251FCFA800153564 /* Dono.swift in Sources */,
+				F634C3B42520DB5E00485546 /* UseCases.swift in Sources */,
 				F6FB015A251F9DF700153564 /* DAO.swift in Sources */,
+				F634C3BE2520E1B900485546 /* DonoTableViewCell.swift in Sources */,
+				F634C3C62520FC3C00485546 /* Observer.swift in Sources */,
 				F6DB1D31252030A20022C27B /* Servico.swift in Sources */,
-				F6365D83251E9A50002720DB /* ViewController.swift in Sources */,
 				F6365D7F251E9A50002720DB /* AppDelegate.swift in Sources */,
+				F61F88032521020A00FB1925 /* DependenciesInjector.swift in Sources */,
+				F634C3BA2520E11D00485546 /* ListarDonosViewController.swift in Sources */,
+				F634C3AF2520CC3600485546 /* DonoFormsViewController.swift in Sources */,
+				F634C3AC25204C2000485546 /* ViewController.swift in Sources */,
 				F6365D81251E9A50002720DB /* SceneDelegate.swift in Sources */,
 				F6DB1D2F25201ABF0022C27B /* DonoDAO.swift in Sources */,
+				F634C3B72520DCD800485546 /* Object.swift in Sources */,
+				F6DB1D35252031AC0022C27B /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,7 @@ enum TypeConstraint {
     case equalTo
 }
 
+//Padrões -> Builder
 extension UIView {
     
     @discardableResult

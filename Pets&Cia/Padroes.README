@@ -1,29 +1,32 @@
 # Padrões
 ## Usados
 ### Padrões GRASP:
+Creator
+
+
 Invenção Pura
 Indirecao
+Controller
 
 
 ### Padrões GOF
 Template Method
+Singleton
+Observer
 
 ### Outros:
+DAO
+
 
 
 
 - Vamos usar:
-Singleton
-Observer
-DAO
+
+
 Repository Ou Façade
 Builder
-
-
 Factory?
 
-
-Padrões GRASP:
 
 
 ## Padrões GRASP ------------------------
