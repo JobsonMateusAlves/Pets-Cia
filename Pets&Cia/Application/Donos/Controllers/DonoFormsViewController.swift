@@ -54,9 +54,9 @@ extension DonoFormsViewController {
         )
         
         if let id = self.id {
-            self.useCases?.atualizar(dono: dono, with: id)
+            self.useCases?.atualizar(object: dono, with: id)
         } else {
-            self.useCases?.cadastrar(dono: dono)
+            self.useCases?.cadastrar(object: dono)
         }
         
         self.dismiss(animated: true)
