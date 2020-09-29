@@ -1,48 +1,47 @@
 //
-//  DonoUseCases.swift
+//  ServicoUseCases.swift
 //  Pets&Cia
 //
-//  Created by Jobson Mateus on 27/09/20.
+//  Created by Pedro Jaime on 28/09/20.
 //  Copyright © 2020 Jobson Mateus. All rights reserved.
 //
 
 import Foundation
 import RealmSwift
 
-//Padrão Singleton
-//Padrão Observer
-class DonoUseCases: UseCases {
+class ServicoUseCases: UseCases {
 
-    typealias T = Dono
+    typealias T = Servico
     
-    static let shared: DonoUseCases = {
-        return DonoUseCases()
+    static let shared: ServicoUseCases = {
+        return ServicoUseCases()
     }()
     
-    var dao: DonoDAO?
+    var dao: ServicoDAO?
     var observers: [Observer] = []
     
     private init() {}
     
-    func set(dao: DonoDAO) {
+    func set(dao: ServicoDAO) {
         self.dao = dao
     }
 }
 
+
 //MARK: UseCases Functions
-extension DonoUseCases {
-    func cadastrar(object: Dono) {
+extension ServicoUseCases {
+    func cadastrar(object: Servico) {
         self.dao?.save(object: object)
         self.notify()
     }
     
-    func atualizar(object: Dono, with id: Any) {
+    func atualizar(object: Servico, with id: Any) {
         
         self.dao?.update(object: object, id: id)
         self.notify()
     }
     
-    func listar() -> [Dono] {
+    func listar() -> [Servico] {
         self.dao?.get() ?? []
     }
     
@@ -53,7 +52,7 @@ extension DonoUseCases {
         }
     }
     
-    func get(by id: Any?) -> Dono? {
+    func get(by id: Any?) -> Servico? {
         if let id = id {
             return self.dao?.get(by: id)
         }
@@ -61,7 +60,7 @@ extension DonoUseCases {
     }
 }
 
-extension DonoUseCases: Subject {
+extension ServicoUseCases: Subject {
     
     func remove(observer: Observer?) {
         if let observer = observer {
@@ -69,6 +68,4 @@ extension DonoUseCases: Subject {
         }
     }
 }
-
-
 

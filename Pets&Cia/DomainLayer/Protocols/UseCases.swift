@@ -11,8 +11,8 @@ import Foundation
 protocol UseCases {
     associatedtype T
 
-    func cadastrar(dono: T)
-    func atualizar(dono: T, with id: Any)
+    func cadastrar(object: T)
+    func atualizar(object: T, with id: Any)
     func listar() -> [T]
     func remover(id: Any?)
     func get(by id: Any?) -> T?

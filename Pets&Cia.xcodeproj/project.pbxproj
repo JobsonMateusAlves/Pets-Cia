@@ -10,6 +10,7 @@
 		0CB53883BD058ED1D3CD16B5 /* Pods_Pets_Cia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */; };
 		E8E1F0F22521859800AFFA18 /* ServicoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1F0F12521859800AFFA18 /* ServicoDAO.swift */; };
 		E8E1F0F92521916200AFFA18 /* ServicoFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1F0F82521916200AFFA18 /* ServicoFormsViewController.swift */; };
+		E8E1F0FD2521938400AFFA18 /* ServicoUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1F0FC2521938400AFFA18 /* ServicoUseCases.swift */; };
 		F6189948252107EB00AB8A28 /* DonoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6189947252107EB00AB8A28 /* DonoViewController.swift */; };
 		F61F88032521020A00FB1925 /* DependenciesInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F61F88022521020A00FB1925 /* DependenciesInjector.swift */; };
 		F634C3AC25204C2000485546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F634C3AA25204C2000485546 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.release.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.release.xcconfig"; sourceTree = "<group>"; };
 		E8E1F0F12521859800AFFA18 /* ServicoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicoDAO.swift; sourceTree = "<group>"; };
 		E8E1F0F82521916200AFFA18 /* ServicoFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicoFormsViewController.swift; sourceTree = "<group>"; };
+		E8E1F0FC2521938400AFFA18 /* ServicoUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicoUseCases.swift; sourceTree = "<group>"; };
 		F6189947252107EB00AB8A28 /* DonoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoViewController.swift; sourceTree = "<group>"; };
 		F61F88022521020A00FB1925 /* DependenciesInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependenciesInjector.swift; sourceTree = "<group>"; };
 		F634C3AA25204C2000485546 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			children = (
 				F634C3B82520DD7400485546 /* Protocols */,
 				F634C3B12520CF7300485546 /* DonoUseCases.swift */,
+				E8E1F0FC2521938400AFFA18 /* ServicoUseCases.swift */,
 			);
 			path = DomainLayer;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				F634C3B22520CF7300485546 /* DonoUseCases.swift in Sources */,
 				F6189948252107EB00AB8A28 /* DonoViewController.swift in Sources */,
 				F6FB0167251FCFA800153564 /* Dono.swift in Sources */,
+				E8E1F0FD2521938400AFFA18 /* ServicoUseCases.swift in Sources */,
 				F634C3B42520DB5E00485546 /* UseCases.swift in Sources */,
 				F6FB015A251F9DF700153564 /* DAO.swift in Sources */,
 				F634C3BE2520E1B900485546 /* DonoTableViewCell.swift in Sources */,
