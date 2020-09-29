@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0CB53883BD058ED1D3CD16B5 /* Pods_Pets_Cia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */; };
+		146921D62523F74400548536 /* AnimalDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146921D52523F74400548536 /* AnimalDAO.swift */; };
+		146921DB2523FBAF00548536 /* AnimalUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146921DA2523FBAF00548536 /* AnimalUseCases.swift */; };
 		E8E1F0F22521859800AFFA18 /* ServicoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1F0F12521859800AFFA18 /* ServicoDAO.swift */; };
 		E8E1F0F92521916200AFFA18 /* ServicoFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1F0F82521916200AFFA18 /* ServicoFormsViewController.swift */; };
 		E8E1F0FD2521938400AFFA18 /* ServicoUseCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E1F0FC2521938400AFFA18 /* ServicoUseCases.swift */; };
@@ -38,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		01164C7DE5D1565D2DFD2A67 /* Pods_Pets_Cia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pets_Cia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		146921D52523F74400548536 /* AnimalDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimalDAO.swift; path = "Pets&Cia/DataLayer/Animais/DAO/AnimalDAO.swift"; sourceTree = SOURCE_ROOT; };
+		146921DA2523FBAF00548536 /* AnimalUseCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalUseCases.swift; sourceTree = "<group>"; };
 		2BFAD9BCFCCB78E4ADC7C6F3 /* Pods-Pets&Cia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.debug.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.debug.xcconfig"; sourceTree = "<group>"; };
 		C248EB0AB391ABA270DCEC75 /* Pods-Pets&Cia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pets&Cia.release.xcconfig"; path = "Target Support Files/Pods-Pets&Cia/Pods-Pets&Cia.release.xcconfig"; sourceTree = "<group>"; };
 		E8E1F0F12521859800AFFA18 /* ServicoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicoDAO.swift; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		146921D82523F75F00548536 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				146921D52523F74400548536 /* AnimalDAO.swift */,
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
 		5E2F1F7DDF067B7582CFA0B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +151,7 @@
 				F634C3B82520DD7400485546 /* Protocols */,
 				F634C3B12520CF7300485546 /* DonoUseCases.swift */,
 				E8E1F0FC2521938400AFFA18 /* ServicoUseCases.swift */,
+				146921DA2523FBAF00548536 /* AnimalUseCases.swift */,
 			);
 			path = DomainLayer;
 			sourceTree = "<group>";
@@ -232,8 +245,8 @@
 		F6DB1D32252031520022C27B /* Servicos */ = {
 			isa = PBXGroup;
 			children = (
-				E8E1F0F02521856C00AFFA18 /* DAO */,
 				F6E52A4C2521687100FDE820 /* Model */,
+				E8E1F0F02521856C00AFFA18 /* DAO */,
 			);
 			name = Servicos;
 			path = "Serviço";
@@ -243,7 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				F6E52A4E2521688400FDE820 /* Model */,
-				F6E52A4F2521688B00FDE820 /* DAO */,
+				146921D82523F75F00548536 /* DAO */,
 			);
 			path = Animais;
 			sourceTree = "<group>";
@@ -264,13 +277,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F6E52A4F2521688B00FDE820 /* DAO */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DAO;
-			sourceTree = "<group>";
-		};
 		F6E52A502521695800FDE820 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,8 +288,8 @@
 		F6FB015D251FCBB200153564 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				E8E1F0F5252190C100AFFA18 /* Servicos */,
 				F6365D84251E9A50002720DB /* Main.storyboard */,
+				E8E1F0F5252190C100AFFA18 /* Servicos */,
 				F6FB015E251FCBE600153564 /* Core */,
 				F6E52A502521695800FDE820 /* Menu */,
 				F6530BB925204AF400CA81FA /* Donos */,
@@ -453,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				146921D62523F74400548536 /* AnimalDAO.swift in Sources */,
 				F6FB0161251FCBFC00153564 /* UIView.swift in Sources */,
 				F634C3B22520CF7300485546 /* DonoUseCases.swift in Sources */,
 				F6189948252107EB00AB8A28 /* DonoViewController.swift in Sources */,
@@ -466,6 +473,7 @@
 				F6365D7F251E9A50002720DB /* AppDelegate.swift in Sources */,
 				F61F88032521020A00FB1925 /* DependenciesInjector.swift in Sources */,
 				F634C3BA2520E11D00485546 /* ListarDonosViewController.swift in Sources */,
+				146921DB2523FBAF00548536 /* AnimalUseCases.swift in Sources */,
 				E8E1F0F92521916200AFFA18 /* ServicoFormsViewController.swift in Sources */,
 				F634C3AF2520CC3600485546 /* DonoFormsViewController.swift in Sources */,
 				F634C3AC25204C2000485546 /* ViewController.swift in Sources */,
