@@ -19,7 +19,7 @@ class Dono: Object {
     @objc dynamic public private(set) var numeroTelefone: String?
     @objc dynamic public private(set) var endereco: String?
     
-    init(nome: String?, cpf: String?, email: String?, numeroTelefone: String?, endereco: String?) {
+    init(nome: String, cpf: String, email: String, numeroTelefone: String, endereco: String) {
         super.init()
         
         self.nome = nome
@@ -37,23 +37,23 @@ class Dono: Object {
         return "id"
     }
     
-    func set(nome: String?) {
+    func set(nome: String) {
         self.nome = nome
     }
     
-    func set(cpf: String?) {
+    func set(cpf: String) {
         self.cpf = cpf
     }
     
-    func set(email: String?) {
+    func set(email: String) {
         self.email = email
     }
     
-    func set(numeroTelefone: String?) {
+    func set(numeroTelefone: String) {
         self.numeroTelefone = numeroTelefone
     }
     
-    func set(endereco: String?) {
+    func set(endereco: String) {
         self.endereco = endereco
     }
 }

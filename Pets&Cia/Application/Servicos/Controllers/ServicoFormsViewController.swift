@@ -9,7 +9,7 @@
 import UIKit
 
 class ServicoFormsViewController: UIViewController {
-
+    
     @IBOutlet weak var nomeTextField: UITextField!
     @IBOutlet weak var valorTextField: UITextField!
     @IBOutlet weak var descricaoTextView: UITextView!
@@ -24,6 +24,7 @@ class ServicoFormsViewController: UIViewController {
         
         self.useCases = ServicoUseCases.shared
         self.setup()
+        self.setupLayout()
     }
     
     func setup() {
@@ -45,6 +46,13 @@ extension ServicoFormsViewController {
     
     @IBAction func salvarAction(_ sender: Any) {
         
+        guard !self.nomeTextField.text!.isEmpty, !self.valorTextField.text!.isEmpty else {
+            
+            self.showAlert()
+            
+            return
+        }
+        
         let servico = Servico(
             nome: self.nomeTextField.text,
             descricao: self.descricaoTextView.text,
@@ -63,5 +71,24 @@ extension ServicoFormsViewController {
     @IBAction func cancelar(_ sender: Any) {
         
         self.dismiss(animated: true)
+    }
+    
+    func showAlert() {
+        let alerta = UIAlertController(title: "Atenção", message: "É necessário preencher todos os campos", preferredStyle: .alert)
+        alerta.addAction(UIAlertAction(title: "Ok", style: .default))
+        self.present(alerta, animated: true)
+    }//TODO: Criar classes para alertas.
+}
+
+extension ServicoFormsViewController {
+    func setupLayout() {
+        
+        let componentColor = CGFloat(220/255)
+        
+        self.descricaoTextView.layer.borderWidth = 1
+        self.descricaoTextView.layer.borderColor = UIColor(red: componentColor, green: componentColor, blue: componentColor, alpha: 0.2).cgColor
+        
+        self.descricaoTextView.layer.cornerRadius = 5
+        self.descricaoTextView.clipsToBounds = true
     }
 }

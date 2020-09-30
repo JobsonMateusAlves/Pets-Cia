@@ -27,11 +27,10 @@ class DonoDAO: DAO {
         
         try? self.realm.write {
             
-            result?.set(nome: object.nome)
-            result?.set(cpf: object.cpf)
-            result?.set(email: object.email)
-            result?.set(numeroTelefone: object.numeroTelefone)
-            result?.set(endereco: object.endereco)
+            result?.set(nome: object.nome!)
+            result?.set(email: object.email!)
+            result?.set(numeroTelefone: object.numeroTelefone!)
+            result?.set(endereco: object.endereco!)
         }
     }
     
