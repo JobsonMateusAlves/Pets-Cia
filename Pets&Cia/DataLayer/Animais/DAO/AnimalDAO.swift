@@ -23,8 +23,22 @@ class AnimalDAO: DAO{
         let result = self.getReference(by: id)
         
         try? self.realm.write{
-            result?.set(nome: object.nome)
-            result?.set(raca: object.raca)
+            result?.set(nome: object.nome!)
+            result?.set(raca: object.raca!)
+        }
+    }
+    
+    func get(by donoId: Any) -> [Animal] {
+        
+        self.get().filter({ $0.donoId.value == donoId as? Int})
+    }
+    
+    func addServicoToHistorico(servico: String, id: Any) {
+        
+        let result = self.getReference(by: id)
+        
+        try? self.realm.write{
+            result?.set(historico: servico)
         }
     }
     

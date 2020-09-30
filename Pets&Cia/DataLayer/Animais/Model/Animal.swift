@@ -16,9 +16,9 @@ class Animal: Object {
     public private(set) var donoId = RealmOptional<Int>()  // private(set) - variavel so                                                 // pode ser alterada dentro da classe
     @objc dynamic public private(set) var nome: String?
     @objc dynamic public private(set) var raca: String?
-
+    public private(set) var historicoServicos = List<String>()
     
-    init(nome: String?, raca: String?, donoId: Int?) {       //Declaração de variáveis
+    init(nome: String, raca: String, donoId: Int) {       //Declaração de variáveis
                                                              //? -> pode ter um valor tipo
                                                              //     string ou tipo nulo
         super.init()
@@ -36,12 +36,16 @@ class Animal: Object {
         return "id"
     }
     
-    func set(nome: String?) {
+    func set(nome: String) {
         self.nome = nome
     }
     
-    func set(raca: String?) {
+    func set(raca: String) {
         self.raca = raca
+    }
+    
+    func set(historico: String) {
+        self.historicoServicos.append(historico)
     }
 }
 

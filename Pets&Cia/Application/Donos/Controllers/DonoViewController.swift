@@ -54,6 +54,29 @@ extension DonoViewController {
     }
     
     @objc func cancelarAction() {
+        
         self.dismiss(animated: true)
+    }
+    
+    @IBAction func addAnimal(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "AnimalFormsViewController") as? AnimalFormsViewController {
+            controller.donoId = self.id
+            
+            let navigation = UINavigationController(rootViewController: controller)
+            navigation.modalPresentationStyle = .fullScreen
+            self.present(navigation, animated: true)
+        }
+    }
+    
+    @IBAction func visualizarAnimais(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let controller = storyboard.instantiateViewController(withIdentifier: "ListarAnimaisViewController") as? ListarAnimaisViewController {
+            controller.donoId = self.id
+            
+//            let navigation = UINavigationController(rootViewController: controller)
+//            navigation.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }

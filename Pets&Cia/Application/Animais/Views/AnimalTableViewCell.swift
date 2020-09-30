@@ -7,18 +7,19 @@
 //
 
 import UIKit
+import Reusable
 
-class AnimalTableViewCell: UITableViewCell {
+class AnimalTableViewCell: UITableViewCell, NibReusable {
 
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var racaLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    func bind(animal: Animal) {
+        self.nomeLabel.text = animal.nome
+        self.racaLabel.text = animal.raca
+    }
 }

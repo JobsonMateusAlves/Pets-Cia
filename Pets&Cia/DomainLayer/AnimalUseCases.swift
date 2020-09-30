@@ -58,6 +58,15 @@ extension AnimalUseCases {
         }
         return nil
     }
+    
+    func listar(by donoId: Any) -> [Animal] {
+        self.dao?.get(by: donoId) ?? []
+    }
+    
+    func add(servico: String, id: Any?) {
+        self.dao?.addServicoToHistorico(servico: servico, id: id)
+        self.notify()
+    }
 }
 
 extension AnimalUseCases: Subject {     // As classes que imp o subject vai ser obs
