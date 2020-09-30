@@ -28,7 +28,8 @@ class DonoViewController: UIViewController {
         self.useCases = DonoUseCases.shared
         self.setup()
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Cancelar", style: .plain, target: self, action: #selector(DonoViewController.cancelarAction))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Apagar", style: .plain, target: self, action: #selector(DonoViewController.apagarAction))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Voltar", style: .plain, target: self, action: #selector(DonoViewController.cancelarAction))
     }
     
     func setup() {
@@ -46,7 +47,7 @@ class DonoViewController: UIViewController {
 //MARK: Actions
 extension DonoViewController {
     
-    @IBAction func apagarAction(_ sender: Any) {
+    @objc func apagarAction() {
         
         self.useCases?.remover(id: self.id)
         self.dismiss(animated: true)

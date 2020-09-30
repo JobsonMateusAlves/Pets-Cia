@@ -41,10 +41,6 @@ class Dono: Object {
         self.nome = nome
     }
     
-    func set(cpf: String) {
-        self.cpf = cpf
-    }
-    
     func set(email: String) {
         self.email = email
     }

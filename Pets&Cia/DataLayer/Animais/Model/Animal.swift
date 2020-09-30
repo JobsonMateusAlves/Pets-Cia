@@ -43,6 +43,5 @@ class Animal: Object {
     func set(raca: String?) {
         self.raca = raca
     }
-    
 }
 

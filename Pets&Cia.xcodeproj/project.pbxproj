@@ -30,6 +30,13 @@
 		F6365D88251E9A54002720DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6365D87251E9A54002720DB /* Assets.xcassets */; };
 		F6365D8B251E9A54002720DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6365D89251E9A54002720DB /* LaunchScreen.storyboard */; };
 		F646A20B25240150006595DE /* AnimalFormsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646A20A25240150006595DE /* AnimalFormsViewController.swift */; };
+		F646A20D2524118B006595DE /* ListarServicosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646A20C2524118B006595DE /* ListarServicosViewController.swift */; };
+		F646A210252411A7006595DE /* ListarAnimaisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646A20F252411A7006595DE /* ListarAnimaisViewController.swift */; };
+		F646A212252411B2006595DE /* AnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646A211252411B2006595DE /* AnimalViewController.swift */; };
+		F646A216252411CC006595DE /* AnimalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646A214252411CC006595DE /* AnimalTableViewCell.swift */; };
+		F646A217252411CC006595DE /* AnimalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646A215252411CC006595DE /* AnimalTableViewCell.xib */; };
+		F646A21B252411E3006595DE /* ServicoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646A219252411E3006595DE /* ServicoTableViewCell.swift */; };
+		F646A21C252411E3006595DE /* ServicoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F646A21A252411E3006595DE /* ServicoTableViewCell.xib */; };
 		F6DB1D2F25201ABF0022C27B /* DonoDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D2E25201ABF0022C27B /* DonoDAO.swift */; };
 		F6DB1D31252030A20022C27B /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D30252030A20022C27B /* Servico.swift */; };
 		F6DB1D35252031AC0022C27B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D34252031AC0022C27B /* Animal.swift */; };
@@ -67,6 +74,13 @@
 		F6365D8A251E9A54002720DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6365D8C251E9A54002720DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F646A20A25240150006595DE /* AnimalFormsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalFormsViewController.swift; sourceTree = "<group>"; };
+		F646A20C2524118B006595DE /* ListarServicosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarServicosViewController.swift; sourceTree = "<group>"; };
+		F646A20F252411A7006595DE /* ListarAnimaisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListarAnimaisViewController.swift; sourceTree = "<group>"; };
+		F646A211252411B2006595DE /* AnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalViewController.swift; sourceTree = "<group>"; };
+		F646A214252411CC006595DE /* AnimalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewCell.swift; sourceTree = "<group>"; };
+		F646A215252411CC006595DE /* AnimalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimalTableViewCell.xib; sourceTree = "<group>"; };
+		F646A219252411E3006595DE /* ServicoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicoTableViewCell.swift; sourceTree = "<group>"; };
+		F646A21A252411E3006595DE /* ServicoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicoTableViewCell.xib; sourceTree = "<group>"; };
 		F6DB1D2E25201ABF0022C27B /* DonoDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonoDAO.swift; sourceTree = "<group>"; };
 		F6DB1D30252030A20022C27B /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servico.swift; sourceTree = "<group>"; };
 		F6DB1D34252031AC0022C27B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -124,6 +138,7 @@
 		E8E1F0F5252190C100AFFA18 /* Servicos */ = {
 			isa = PBXGroup;
 			children = (
+				F646A218252411CF006595DE /* Views */,
 				E8E1F0F72521911200AFFA18 /* Controllers */,
 			);
 			path = Servicos;
@@ -133,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E8E1F0F82521916200AFFA18 /* ServicoFormsViewController.swift */,
+				F646A20C2524118B006595DE /* ListarServicosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -230,9 +246,38 @@
 		F646A20925240126006595DE /* Animais */ = {
 			isa = PBXGroup;
 			children = (
-				F646A20A25240150006595DE /* AnimalFormsViewController.swift */,
+				F646A213252411B6006595DE /* Views */,
+				F646A20E25241190006595DE /* Controllers */,
 			);
 			path = Animais;
+			sourceTree = "<group>";
+		};
+		F646A20E25241190006595DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F646A20A25240150006595DE /* AnimalFormsViewController.swift */,
+				F646A20F252411A7006595DE /* ListarAnimaisViewController.swift */,
+				F646A211252411B2006595DE /* AnimalViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F646A213252411B6006595DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F646A214252411CC006595DE /* AnimalTableViewCell.swift */,
+				F646A215252411CC006595DE /* AnimalTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F646A218252411CF006595DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F646A219252411E3006595DE /* ServicoTableViewCell.swift */,
+				F646A21A252411E3006595DE /* ServicoTableViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F6530BB925204AF400CA81FA /* Donos */ = {
@@ -414,10 +459,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F634C3BF2520E1B900485546 /* DonoTableViewCell.xib in Resources */,
+				F646A21C252411E3006595DE /* ServicoTableViewCell.xib in Resources */,
 				F6FB015C251FAF8300153564 /* Padroes.README in Resources */,
 				F6365D8B251E9A54002720DB /* LaunchScreen.storyboard in Resources */,
 				F6365D88251E9A54002720DB /* Assets.xcassets in Resources */,
 				F6365D86251E9A50002720DB /* Main.storyboard in Resources */,
+				F646A217252411CC006595DE /* AnimalTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,8 +518,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				146921D62523F74400548536 /* AnimalDAO.swift in Sources */,
+				F646A216252411CC006595DE /* AnimalTableViewCell.swift in Sources */,
 				F6FB0161251FCBFC00153564 /* UIView.swift in Sources */,
+				F646A210252411A7006595DE /* ListarAnimaisViewController.swift in Sources */,
 				F646A20B25240150006595DE /* AnimalFormsViewController.swift in Sources */,
+				F646A212252411B2006595DE /* AnimalViewController.swift in Sources */,
 				F634C3B22520CF7300485546 /* DonoUseCases.swift in Sources */,
 				F6189948252107EB00AB8A28 /* DonoViewController.swift in Sources */,
 				F6FB0167251FCFA800153564 /* Dono.swift in Sources */,
@@ -481,11 +531,13 @@
 				F6FB015A251F9DF700153564 /* DAO.swift in Sources */,
 				F634C3BE2520E1B900485546 /* DonoTableViewCell.swift in Sources */,
 				F634C3C62520FC3C00485546 /* Observer.swift in Sources */,
+				F646A21B252411E3006595DE /* ServicoTableViewCell.swift in Sources */,
 				F6DB1D31252030A20022C27B /* Servico.swift in Sources */,
 				F6365D7F251E9A50002720DB /* AppDelegate.swift in Sources */,
 				F61F88032521020A00FB1925 /* DependenciesInjector.swift in Sources */,
 				F634C3BA2520E11D00485546 /* ListarDonosViewController.swift in Sources */,
 				146921DB2523FBAF00548536 /* AnimalUseCases.swift in Sources */,
+				F646A20D2524118B006595DE /* ListarServicosViewController.swift in Sources */,
 				E8E1F0F92521916200AFFA18 /* ServicoFormsViewController.swift in Sources */,
 				F634C3AF2520CC3600485546 /* DonoFormsViewController.swift in Sources */,
 				F634C3AC25204C2000485546 /* ViewController.swift in Sources */,
