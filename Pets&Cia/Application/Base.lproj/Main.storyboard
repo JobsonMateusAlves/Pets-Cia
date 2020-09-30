@@ -523,10 +523,10 @@
             </objects>
             <point key="canvasLocation" x="-32" y="1930"/>
         </scene>
-        <!--View Controller-->
+        <!--Listar Servicos View Controller-->
         <scene sceneID="Hmp-9R-McV">
             <objects>
-                <viewController id="1tJ-Ws-pZl" sceneMemberID="viewController">
+                <viewController id="1tJ-Ws-pZl" customClass="ListarServicosViewController" customModule="Pets_Cia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="czr-sV-Ik8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -546,6 +546,9 @@
                         <viewLayoutGuide key="safeArea" id="W2p-KA-gC7"/>
                     </view>
                     <navigationItem key="navigationItem" id="zPA-KV-nc2"/>
+                    <connections>
+                        <outlet property="tableView" destination="JsN-J4-YwG" id="DJZ-7o-aCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vb6-1r-akD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

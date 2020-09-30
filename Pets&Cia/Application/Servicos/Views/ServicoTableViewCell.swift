@@ -7,18 +7,22 @@
 //
 
 import UIKit
+import Reusable
 
-class ServicoTableViewCell: UITableViewCell {
+class ServicoTableViewCell: UITableViewCell, NibReusable {
 
+    @IBOutlet weak var nomeLabel: UILabel!
+    @IBOutlet weak var valorLabel: UILabel!
+    @IBOutlet weak var descricaoLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func bind(servico: Servico) {
+        self.nomeLabel.text = servico.nome
+        self.valorLabel.text = String(servico.valor.value ?? 0)
+        self.descricaoLabel.text = servico.descricao
     }
-    
 }

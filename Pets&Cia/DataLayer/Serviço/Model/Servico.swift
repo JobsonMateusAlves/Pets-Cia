@@ -25,6 +25,10 @@ class Servico: Object {
     required init() {
         super.init()
     }
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
 
     func set(nome: String?) {
         self.nome = nome
