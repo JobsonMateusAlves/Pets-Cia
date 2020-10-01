@@ -18,7 +18,7 @@ class DonoViewController: UIViewController {
     @IBOutlet weak var enderecoLabel: UILabel!
     
     var id: Int?
-    var useCases: DonoUseCases? //Padrão Controller
+    var useCases: DonoUseCases?
     
     override func viewDidLoad() {
         super.viewDidLoad()

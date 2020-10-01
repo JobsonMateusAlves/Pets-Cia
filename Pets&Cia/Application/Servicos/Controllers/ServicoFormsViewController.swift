@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 
+//Padrão Controller
 class ServicoFormsViewController: UIViewController {
     
     @IBOutlet weak var nomeTextField: UITextField!
@@ -78,7 +79,7 @@ extension ServicoFormsViewController {
         let alerta = UIAlertController(title: "Atenção", message: "É necessário preencher todos os campos", preferredStyle: .alert)
         alerta.addAction(UIAlertAction(title: "Ok", style: .default))
         self.present(alerta, animated: true)
-    }//TODO: Criar classes para alertas.
+    }
 }
 
 extension ServicoFormsViewController {

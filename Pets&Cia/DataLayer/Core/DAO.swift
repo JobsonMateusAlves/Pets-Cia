@@ -78,10 +78,7 @@ extension DAO {
     }
     
     func autoIncrementId(of object: T) {
-        
-        // Realm não possui auto-increment por padrão
-        // Para criar é necessário uma informação que apenas a DAO tem acesso
-        // DAO<T: Object> é genérica portanto com T não é possível ter acesso ao atributo id
+    
         self.setAutoIncrement(of: object, with: (realm.objects(T.self).max(ofProperty: T.primaryKey() ?? "") as Int? ?? 0) + 1)
     }
 }

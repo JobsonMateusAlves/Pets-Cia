@@ -9,6 +9,8 @@
 import Foundation
 import RealmSwift
 
+//Padrão Singleton
+//Padrão Observer
 class ServicoUseCases: UseCases {
 
     typealias T = Servico

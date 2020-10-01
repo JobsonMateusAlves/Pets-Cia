@@ -42,7 +42,7 @@
 		F6DB1D31252030A20022C27B /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D30252030A20022C27B /* Servico.swift */; };
 		F6DB1D35252031AC0022C27B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D34252031AC0022C27B /* Animal.swift */; };
 		F6FB015A251F9DF700153564 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0159251F9DF700153564 /* DAO.swift */; };
-		F6FB015C251FAF8300153564 /* Padroes.README in Resources */ = {isa = PBXBuildFile; fileRef = F6FB015B251FAF8300153564 /* Padroes.README */; };
+		F6FB015C251FAF8300153564 /* PadrõesREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = F6FB015B251FAF8300153564 /* PadrõesREADME.md */; };
 		F6FB0167251FCFA800153564 /* Dono.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0166251FCFA800153564 /* Dono.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +86,7 @@
 		F6DB1D30252030A20022C27B /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servico.swift; sourceTree = "<group>"; };
 		F6DB1D34252031AC0022C27B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		F6FB0159251F9DF700153564 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
-		F6FB015B251FAF8300153564 /* Padroes.README */ = {isa = PBXFileReference; lastKnownFileType = text; path = Padroes.README; sourceTree = "<group>"; };
+		F6FB015B251FAF8300153564 /* PadrõesREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "PadrõesREADME.md"; sourceTree = "<group>"; };
 		F6FB0166251FCFA800153564 /* Dono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dono.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,7 +220,7 @@
 		F6365D7D251E9A50002720DB /* Pets&Cia */ = {
 			isa = PBXGroup;
 			children = (
-				F6FB015B251FAF8300153564 /* Padroes.README */,
+				F6FB015B251FAF8300153564 /* PadrõesREADME.md */,
 				F6459CE02520374000509B2E /* Core */,
 				F6FB0162251FCF4700153564 /* DataLayer */,
 				F634C3B02520CF5E00485546 /* DomainLayer */,
@@ -460,7 +460,7 @@
 			files = (
 				F634C3BF2520E1B900485546 /* DonoTableViewCell.xib in Resources */,
 				F646A21C252411E3006595DE /* ServicoTableViewCell.xib in Resources */,
-				F6FB015C251FAF8300153564 /* Padroes.README in Resources */,
+				F6FB015C251FAF8300153564 /* PadrõesREADME.md in Resources */,
 				F6365D8B251E9A54002720DB /* LaunchScreen.storyboard in Resources */,
 				F6365D88251E9A54002720DB /* Assets.xcassets in Resources */,
 				F6365D86251E9A50002720DB /* Main.storyboard in Resources */,

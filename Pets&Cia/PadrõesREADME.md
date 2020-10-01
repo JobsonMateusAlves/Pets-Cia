@@ -4,11 +4,10 @@
 - Basicos:
 Creator - Ok
 Invenção Pura - Ok
-Indirecao - Ok
-Controller - Ok
 
 - Avançados:
-Polimorfismo - Ok
+Indirecao - Ok
+Controller - Ok
 
 ### Padrões GOF: ---------------------------------------------------
 - Criacao:

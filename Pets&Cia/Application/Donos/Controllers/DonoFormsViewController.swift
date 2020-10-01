@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Padrão Controller
 class DonoFormsViewController: UIViewController {
     
     @IBOutlet weak var nomeTextField: UITextField!
@@ -94,5 +95,5 @@ extension DonoFormsViewController {
         let alerta = UIAlertController(title: "Atenção", message: "É necessário preencher todos os campos", preferredStyle: .alert)
         alerta.addAction(UIAlertAction(title: "Ok", style: .default))
         self.present(alerta, animated: true)
-    }//TODO: Criar classes para alertas.
+    }
 }

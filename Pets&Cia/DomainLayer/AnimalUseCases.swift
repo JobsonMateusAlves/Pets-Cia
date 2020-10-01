@@ -6,21 +6,23 @@
 //  Copyright © 2020 Jobson Mateus. All rights reserved.
 //
 
+//Padrão Singleton
+//Padrão Observer
 import Foundation
 import RealmSwift
 
-class AnimalUseCases: UseCases {           //implementando o protocolo UseCases
-                                          // Interaje com o DAO
-    typealias T = Animal                 // T - um tipo associado ao protocolo
+class AnimalUseCases: UseCases {
+                                          
+    typealias T = Animal
     
-    static let shared: AnimalUseCases = {  // singleton - classe que faz o compartilhamento
+    static let shared: AnimalUseCases = {
         return AnimalUseCases()
     }()
     
     var dao: AnimalDAO?
     var observers: [Observer] = []
     
-    private init() {}    // garante que nao consegue instanciar outro AnimalUseCases
+    private init() {}
     
     func set(dao: AnimalDAO) {
         self.dao = dao
@@ -64,14 +66,16 @@ extension AnimalUseCases {
     }
     
     func add(servico: String, id: Any?) {
-        self.dao?.addServicoToHistorico(servico: servico, id: id)
-        self.notify()
+        if let id = id {
+            self.dao?.addServicoToHistorico(servico: servico, id: id)
+            self.notify()
+        }
     }
 }
 
-extension AnimalUseCases: Subject {     // As classes que imp o subject vai ser obs
+extension AnimalUseCases: Subject {
     
-    func remove(observer: Observer?) {  //padrão Observer -
+    func remove(observer: Observer?) {  
         if let observer = observer {
             self.observers.removeAll(where: { $0 as? UIViewController === observer as? UIViewController })
         }

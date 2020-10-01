@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 
+
 class AnimalDAO: DAO{
     
     typealias T = Animal

@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Padrão Controller
 class AnimalFormsViewController: UIViewController {
     
     @IBOutlet weak var nomeTextField: UITextField!
@@ -69,5 +70,5 @@ extension AnimalFormsViewController {
         let alerta = UIAlertController(title: "Atenção", message: "É necessário preencher todos os campos", preferredStyle: .alert)
         alerta.addAction(UIAlertAction(title: "Ok", style: .default))
         self.present(alerta, animated: true)
-    }//TODO: Criar classes para alertas.
+    }
 }

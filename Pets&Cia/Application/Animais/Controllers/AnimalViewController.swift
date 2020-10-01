@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Padrão Controller
 class AnimalViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -29,7 +30,7 @@ class AnimalViewController: UIViewController {
         }
     }
     
-    var animalUseCases: AnimalUseCases? //Padrão Controller
+    var animalUseCases: AnimalUseCases?
     var servicoUseCases: ServicoUseCases?
     
     override func viewDidLoad() {
