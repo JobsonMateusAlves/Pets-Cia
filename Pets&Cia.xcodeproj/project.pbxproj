@@ -43,7 +43,6 @@
 		F6DB1D35252031AC0022C27B /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DB1D34252031AC0022C27B /* Animal.swift */; };
 		F6FB015A251F9DF700153564 /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0159251F9DF700153564 /* DAO.swift */; };
 		F6FB015C251FAF8300153564 /* Padroes.README in Resources */ = {isa = PBXBuildFile; fileRef = F6FB015B251FAF8300153564 /* Padroes.README */; };
-		F6FB0161251FCBFC00153564 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0160251FCBFC00153564 /* UIView.swift */; };
 		F6FB0167251FCFA800153564 /* Dono.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FB0166251FCFA800153564 /* Dono.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,7 +87,6 @@
 		F6DB1D34252031AC0022C27B /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		F6FB0159251F9DF700153564 /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 		F6FB015B251FAF8300153564 /* Padroes.README */ = {isa = PBXFileReference; lastKnownFileType = text; path = Padroes.README; sourceTree = "<group>"; };
-		F6FB0160251FCBFC00153564 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F6FB0166251FCFA800153564 /* Dono.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dono.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -358,7 +356,6 @@
 		F6FB015E251FCBE600153564 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F6FB0160251FCBFC00153564 /* UIView.swift */,
 				F646A21D25242CC2006595DE /* UIViewController.swift */,
 			);
 			path = Core;
@@ -522,7 +519,6 @@
 			files = (
 				146921D62523F74400548536 /* AnimalDAO.swift in Sources */,
 				F646A216252411CC006595DE /* AnimalTableViewCell.swift in Sources */,
-				F6FB0161251FCBFC00153564 /* UIView.swift in Sources */,
 				F646A210252411A7006595DE /* ListarAnimaisViewController.swift in Sources */,
 				F646A20B25240150006595DE /* AnimalFormsViewController.swift in Sources */,
 				F646A212252411B2006595DE /* AnimalViewController.swift in Sources */,

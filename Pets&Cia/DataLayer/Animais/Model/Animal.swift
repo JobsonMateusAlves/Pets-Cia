@@ -18,11 +18,9 @@ class Animal: Object {
     @objc dynamic public private(set) var raca: String?
     public private(set) var historicoServicos = List<String>()
     
-    init(nome: String, raca: String, donoId: Int) {       //Declaração de variáveis
-                                                             //? -> pode ter um valor tipo
-                                                             //     string ou tipo nulo
-        super.init()
-        
+    init(nome: String, raca: String, donoId: Int) {         //Declaração de variáveis
+        super.init()                                        //? -> pode ter uma string ou nulo
+                                                            
         self.donoId.value = donoId
         self.nome = nome
         self.raca = raca

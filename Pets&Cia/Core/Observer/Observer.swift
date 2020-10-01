@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+//Observer
 protocol Observer {
     func update()
 }
@@ -17,6 +18,7 @@ protocol Subject {
     var observers: [Observer] { get set }
     mutating func add(observer: Observer)
     mutating func remove(observer: Observer?)
+    func notify()
 }
 
 extension Subject {

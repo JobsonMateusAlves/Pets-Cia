@@ -2,77 +2,21 @@
 ## Usados
 ### Padrões GRASP: ------------------------------------------------
 - Basicos:
-Creator
-Invenção Pura
-Indirecao
-Controller
+Creator - Ok
+Invenção Pura - Ok
+Indirecao - Ok
+Controller - Ok
 
 - Avançados:
-Polimorfismo?
+Polimorfismo - Ok
 
 ### Padrões GOF: ---------------------------------------------------
 - Criacao:
-Singleton
+Singleton - Ok
 
 - Comportamento:
-Template Method
-Observer
+Template Method - Ok
+Observer - Ok
 
 ### Outros: --------------------------------------------------------
-DAO
-
-
-
-### Vamos usar?: ---------------------------------------------------
-Repository Ou Façade
-Builder
-Factory?
-
-
-
-## Padrões GRASP: ------------------------
-
-- Basicos:
-Information Expert
-Creator
-alta coesao
-Baixo acoplamento
-Controller
-
-- Avançados:
-Polimorfismo
-Invenção pura
-Indireção
-
-
-
-
-## Padrões GOF------------------------
-
-### Criação:
-Factory Method - Ok
-Abstract Factory - Ok
-Builder - Ok
-Prototype
-
-### Estrutura:
-Adapter - Ok
-Facade - Ok
-Composite - Ok - X
-
-
-
-
-------------------------
-
-
-Duvidas?
-
-Observer pode ser de 1 pra 1?
-
-
-
-
-
-
-
+DAO - Ok
