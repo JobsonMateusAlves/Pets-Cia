@@ -7,6 +7,11 @@ Para visualizar a versão final da entrega do projeto, acessar a branch **master
 
 O código fonte principal do trabalho fica na pasta **Pets&Cia**.
 
+### Equipe
+- Alice Malzac (1820424)
+- Jobson Mateus (1610334)
+- Pedro Jaime (1610352)
+
 ### Padrões de projetos implementados:
 
 #### GRASP
